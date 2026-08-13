@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ATM {
-    public static void main(String[] args){
+    public static void ATMOptions(){
         int balance = 1000;
         Scanner scanner = new Scanner(System.in);
 
