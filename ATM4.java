@@ -41,15 +41,15 @@ public class ATM4 {
             else if (option == 3){
                 System.out.println("When you want to withdraw: ");
                 int withdraw = scanner.nextInt();
-                if (withdraw > balance || withdraw < 0){
+                if (withdraw > balance ){
                     System.out.println("You do not have a sufficient balance to withdraw this amount.");
                 }
-                else if (withdraw == 0){
+                else if (withdraw == 0 || withdraw < 0){
                     System.out.println("Invalid option!");
                 }
                 else{                
-                    balance = balance - withdraw;
-                    Extract.add("Withdraw: " + withdraw);
+                    balance = balance + (- withdraw);
+                    Extract.add("Withdraw: " +  withdraw);
                 }
             }
 
