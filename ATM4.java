@@ -32,6 +32,8 @@ public class ATM4 {
                 }
                 else{
                 balance = balance + deposit;
+                System.out.println("Deposit successful!");
+                System.out.println("New balance: " + balance);
                 Extract.add("Deposit: " + deposit);
 
                 }
@@ -48,7 +50,9 @@ public class ATM4 {
                     System.out.println("Invalid option!");
                 }
                 else{                
-                    balance = balance + (- withdraw);
+                    balance = balance - withdraw;
+                    System.out.println("Withdraw successful!");
+                    System.out.println("New balance: " + balance);
                     Extract.add("Withdraw: " +  withdraw);
                 }
             }
