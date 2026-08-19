@@ -6,7 +6,7 @@ public class ATM4 {
     public static void main(String[] args){
         int balance = 1000;
         Scanner scanner = new Scanner(System.in);
-        List <Object> Extract = new ArrayList<>();
+        List <String> extract = new ArrayList<>();
         
 
         while (true){
@@ -34,7 +34,7 @@ public class ATM4 {
                 balance = balance + deposit;
                 System.out.println("Deposit successful!");
                 System.out.println("New balance: " + balance);
-                Extract.add("Deposit: " + deposit);
+                extract.add("Deposit: " + deposit);
 
                 }
 
@@ -53,12 +53,12 @@ public class ATM4 {
                     balance = balance - withdraw;
                     System.out.println("Withdraw successful!");
                     System.out.println("New balance: " + balance);
-                    Extract.add("Withdraw: " +  withdraw);
+                    extract.add("Withdraw: " +  withdraw);
                 }
             }
 
             else if (option == 4){
-                for (Object ext : Extract){
+                for (Object ext : extract){
                     System.out.println(ext);
                 }
             }
