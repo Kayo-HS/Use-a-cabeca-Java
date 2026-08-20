@@ -7,6 +7,11 @@ public class ATM4 {
         int balance = 1000;
         Scanner scanner = new Scanner(System.in);
         List <String> extract = new ArrayList<>();
+
+        List <Integer> staticsDeposit = new ArrayList<>();
+        List <Integer> staticsWithdraw = new ArrayList<>();
+
+            
         
 
         while (true){
@@ -17,7 +22,8 @@ public class ATM4 {
             System.out.println("2 - Deposit");
             System.out.println("3 - Withdraw");
             System.out.println("4 - Extract");
-            System.out.println("5 - Exit");
+            System.out.println("5 - Statics");
+            System.out.println("6 - Exit");
             int option = scanner.nextInt();
 
             if (option == 1){
@@ -35,6 +41,7 @@ public class ATM4 {
                 System.out.println("Deposit successful!");
                 System.out.println("New balance: " + balance);
                 extract.add("Deposit: " + deposit);
+                staticsDeposit.add(+1);
 
                 }
 
@@ -54,6 +61,7 @@ public class ATM4 {
                     System.out.println("Withdraw successful!");
                     System.out.println("New balance: " + balance);
                     extract.add("Withdraw: " +  withdraw);
+                    staticsWithdraw.add(+1);
                 }
             }
 
@@ -63,7 +71,26 @@ public class ATM4 {
                 }
             }
 
+            
+
+            
+
             else if (option == 5){
+                int somaDeposit = 0;
+                for (int n : staticsDeposit){
+                somaDeposit += n;
+            }
+
+                int somaWithdraw = 0;
+                for (int n : staticsWithdraw){
+                somaWithdraw += n;
+            }
+                System.out.println("You made " + somaDeposit + " Deposit");
+                System.out.println("You made " + somaWithdraw + " Withdraw");
+
+            }
+
+            else if (option == 6){
                 System.out.println("Thank you for using our ATM");
                 break;
             }
