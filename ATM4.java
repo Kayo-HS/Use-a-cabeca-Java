@@ -37,7 +37,7 @@ public class ATM4 {
                     System.out.println("Invalid option!");
                 }
                 else{
-                balance = balance + deposit;
+                balance += deposit;
                 System.out.println("Deposit successful!");
                 System.out.println("New balance: " + balance);
                 extract.add("Deposit: " + deposit);
@@ -57,7 +57,7 @@ public class ATM4 {
                     System.out.println("Invalid option!");
                 }
                 else{                
-                    balance = balance - withdraw;
+                    balance -= withdraw;
                     System.out.println("Withdraw successful!");
                     System.out.println("New balance: " + balance);
                     extract.add("Withdraw: " +  withdraw);
