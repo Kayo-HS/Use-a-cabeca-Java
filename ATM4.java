@@ -66,7 +66,7 @@ public class ATM4 {
             }
 
             else if (option == 4){
-                for (Object ext : extract){
+                for (String ext : extract){
                     System.out.println(ext);
                 }
             }
