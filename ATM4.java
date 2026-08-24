@@ -64,15 +64,13 @@ public class ATM4 {
                     staticsWithdraw.add(+1);
                 }
             }
-
+            
             else if (option == 4){
                 for (String ext : extract){
                     System.out.println(ext);
                 }
             }
 
-            
-            
 
             else if (option == 5){
                 int somaDeposit = 0;
