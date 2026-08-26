@@ -77,7 +77,6 @@ public class ATM4 {
                 for (int n : staticsDeposit){
                 somaDeposit += n;
             }
-                     
 
 
                 int somaWithdraw = 0;
@@ -85,7 +84,6 @@ public class ATM4 {
                 somaWithdraw += n;
             }
                 System.out.println("You made " + somaDeposit + " Deposit");
-                System.out.println("You made " + somaWithdraw + " Withdraw");
                 System.out.println("You made " + somaWithdraw + " Withdraw");
 
             }
@@ -100,7 +98,6 @@ public class ATM4 {
                 
             }
 
-            System.out.println("Invalid option!");
         }; 
 
         scanner.close();
