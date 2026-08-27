@@ -15,9 +15,9 @@ public class ATM4 {
         
 
         while (true){
-            System.out.println("===============================");
+            System.out.println("<===============================>");
             System.out.println("ATM");
-            System.out.println("===============================");
+            System.out.println("<===============================>");
             System.out.println("1 - Check Balance");
             System.out.println("2 - Deposit");
             System.out.println("3 - Withdraw");
