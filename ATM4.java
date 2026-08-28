@@ -18,12 +18,12 @@ public class ATM4 {
             System.out.println("<===============================>");
             System.out.println("ATM");
             System.out.println("<===============================>");
-            System.out.println("1 - Check Balance");
-            System.out.println("2 - Deposit");
-            System.out.println("3 - Withdraw");
-            System.out.println("4 - Extract");
-            System.out.println("5 - Statics");
-            System.out.println("6 - Exit");
+            System.out.println("1 - Check Balance: ");
+            System.out.println("2 - Deposit: ");
+            System.out.println("3 - Withdraw: ");
+            System.out.println("4 - Extract: ");
+            System.out.println("5 - Statics: ");
+            System.out.println("6 - Exit: ");
             int option = scanner.nextInt();
 
             if (option == 1){
