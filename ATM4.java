@@ -24,6 +24,8 @@ public class ATM4 {
             System.out.println("4 - Extract: ");
             System.out.println("5 - Statics: ");
             System.out.println("6 - Exit: ");
+
+            
             int option = scanner.nextInt();
 
             if (option == 1){
