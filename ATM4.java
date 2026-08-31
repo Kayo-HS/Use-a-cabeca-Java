@@ -28,6 +28,7 @@ public class ATM4 {
             
             int option = scanner.nextInt();
 
+            
             if (option == 1){
                 System.out.println("Your balance is " + balance);
             }
