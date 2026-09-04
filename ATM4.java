@@ -16,6 +16,7 @@ public class ATM4 {
 
         while (true){
             System.out.println("<===============================>");
+
             System.out.println("ATM");
             System.out.println("<===============================>");
             System.out.println("1 - Check Balance: ");
@@ -31,6 +32,7 @@ public class ATM4 {
             if (option == 1){
                 System.out.println("Your balance is " + balance);
             }
+
 
             else if (option == 2){
                 System.out.println("How much you do wish to deposit: ");
