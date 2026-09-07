@@ -9,6 +9,7 @@ class DrumKit {
         System.out.println("Ding Ding Da-Ding");
     }
 }
+
 class DrumKitTestDrive {
     public static void main(String[] args) {
         DrumKit d = new DrumKit();
