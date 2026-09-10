@@ -32,10 +32,8 @@ public class parOuImpar {
                 if (numerosLista % 2 == 0){
                 somaPar++;
             }
-            }
-            
-            
-            
+            };
+
             System.out.println("Seus núemros pares são: " + somaPar);
 
 
