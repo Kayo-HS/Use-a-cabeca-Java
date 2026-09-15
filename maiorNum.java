@@ -10,16 +10,18 @@ public class maiorNum {
 
         System.out.println("Escolha o tamanho da sua lista para ser analisada: ");
         int x = 0;
+        int y = 1;
         int tamanhoLista = input.nextInt();
         
 
         while(x < tamanhoLista){
         System.out.println("==================");
-        System.out.println("Digite " + tamanhoLista + " números inteiros: ");
+        System.out.println("Digite " + y + "° número: ");
         System.out.println("==================");
         int numero = input.nextInt();
         numeros.add(numero);
         x += 1;
+        y += 1;
         
         
         
