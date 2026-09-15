@@ -8,11 +8,14 @@ public class maiorNum {
         
         List <Integer> numeros = new ArrayList<>();
 
-        int x = 1;
+        System.out.println("Escolha o tamanho da sua lista para ser analisada: ");
+        int x = 0;
+        int tamanhoLista = input.nextInt();
+        
 
-        while(x < 6){
+        while(x < tamanhoLista){
         System.out.println("==================");
-        System.out.println("Digite 5 números inteiros: ");
+        System.out.println("Digite " + tamanhoLista + " números inteiros: ");
         System.out.println("==================");
         int numero = input.nextInt();
         numeros.add(numero);
