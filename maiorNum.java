@@ -29,6 +29,7 @@ public class maiorNum {
     };
     int maior = numeros.getFirst();
     int menor = numeros.getFirst();
+    int soma = 0;
         
     for(int i = 0; i < numeros.size(); i++){
             if (numeros.get(i) > maior ){
@@ -41,9 +42,20 @@ public class maiorNum {
                 menor = numeros.get(i);
         }
         }
+
+        for(int i = 0; i < numeros.size(); i++){
+            soma += numeros.get(i); 
+        }
+
+        float somaFloat = soma;
+
+        float media = somaFloat / numeros.size();
+
     System.out.println("Sua lista é " + numeros);
     System.out.println("Maior número é " + maior);
     System.out.println("Menor número é " + menor);
+    System.out.println("A soma dos números são " + soma);
+    System.out.println("A média é " + media);
     input.close();
     
     }
