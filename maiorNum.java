@@ -19,14 +19,14 @@ public class maiorNum {
         System.out.println("==================");
         int numero = input.nextInt();
         numeros.add(numero);
-        x += 1;
+        x ++;
         
         
         
         
     
         
-    };
+    }
     int maior = numeros.getFirst();
     int menor = numeros.getFirst();
     int soma = 0;
