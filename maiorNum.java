@@ -30,6 +30,18 @@ public class maiorNum {
     int maior = numeros.getFirst();
     int menor = numeros.getFirst();
     int soma = 0;
+    int qtdPar = 0;
+    int qtdImpar = 0;
+
+
+    for(int numerosLista : numeros){
+        if (numerosLista % 2 == 0){
+            qtdPar++;
+        }
+        else{
+            qtdImpar++;
+        }
+    }
         
     for(int i = 0; i < numeros.size(); i++){
             if (numeros.get(i) > maior ){
@@ -56,6 +68,8 @@ public class maiorNum {
     System.out.println("Menor número é " + menor);
     System.out.println("A soma dos números são " + soma);
     System.out.println("A média é " + media);
+    System.out.println("Numeros pares são: " + qtdPar);
+    System.out.println("Numeros impares são: " + qtdImpar);
     input.close();
     
     }
