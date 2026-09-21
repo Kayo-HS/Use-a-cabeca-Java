@@ -34,31 +34,36 @@ public class maiorNum {
     int qtdImpar = 0;
 
 
-    for(int numerosLista : numeros){
-        if (numerosLista % 2 == 0){
-            qtdPar++;
-        }
-        else{
-            qtdImpar++;
-        }
-    }
+    // for(int numerosLista : numeros){
+    //     if (numerosLista % 2 == 0){
+    //         qtdPar++;
+    //     }
+    //     else{
+    //         qtdImpar++;
+    //     }
+    // }
         
     for(int i = 0; i < numeros.size(); i++){
+            
+
+            if (numeros.get(i) % 2 == 0){
+                qtdPar++;
+            } else {
+                qtdImpar++;
+            }
+
             if (numeros.get(i) > maior ){
                 maior = numeros.get(i);
         }
-        }
 
-        for(int i = 0; i < numeros.size(); i++){
+
+
             if (numeros.get(i) < menor ){
                 menor = numeros.get(i);
         }
+        soma += numeros.get(i);
         }
-
-        for(int i = 0; i < numeros.size(); i++){
-            soma += numeros.get(i); 
-        }
-
+        
         float somaFloat = soma;
 
         float media = somaFloat / numeros.size();
