@@ -56,8 +56,7 @@ public class maiorNum {
                 maior = numeros.get(i);
         }
 
-
-
+        
             if (numeros.get(i) < menor ){
                 menor = numeros.get(i);
         }
