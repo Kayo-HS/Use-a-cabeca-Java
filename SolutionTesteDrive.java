@@ -6,7 +6,7 @@ class Solution {
         int somaTudo = 0;
         
         
-            for(int i = 0; i < nums.length; i++){
+            for(int i = 0; i < nums.length;){
                 soma = 0;
                 soma2 = 0;
                 if (nums[i] < target){
@@ -26,10 +26,10 @@ class Solution {
                     System.out.println(nums);
                     nums[0] = i;
                     nums[1] = i + 1;
-                    break;
+                    i++;
                 }
-                
             }
+                
             
         return nums;
         
