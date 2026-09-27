@@ -34,8 +34,8 @@ class Solution {
 
 public class SolutionTesteDrive2 {
     public static void main(String[] args) {
-        int[] nums = {2, 4, 5, 6, 8,10};
-        int target = 6;
+        int[] nums = {2, 4, 5, 6, 8,10,12,10};
+        int target = 20;
 
         Solution solution = new Solution();
 
