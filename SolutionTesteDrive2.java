@@ -1,3 +1,5 @@
+//import java.util.Arrays;
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
@@ -40,7 +42,14 @@ public class SolutionTesteDrive2 {
         Solution solution = new Solution();
 
         solution.twoSum(nums, target);
+        System.out.println(nums[0]);
+        System.out.println(nums[1]);
+
+
+        
     }
+    
 }  
+
     
 
