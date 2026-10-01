@@ -34,14 +34,7 @@ public class maiorNum {
     int qtdImpar = 0;
 
 
-    // for(int numerosLista : numeros){
-    //     if (numerosLista % 2 == 0){
-    //         qtdPar++;
-    //     }
-    //     else{
-    //         qtdImpar++;
-    //     }
-    // }
+    
         
     for(int i = 0; i < numeros.size(); i++){
             
