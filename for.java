@@ -7,7 +7,9 @@ public class for {
         int alvo = 2;
 
 
-        for(int i = 0; i < numeros.size(); i++)
+        for(int i = 0; i < numeros.size(); i++){
+            for(int j = 1; j < numeros.size(); j++)
+        }
     }
     
 }
