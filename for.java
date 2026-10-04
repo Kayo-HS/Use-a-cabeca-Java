@@ -4,7 +4,7 @@ public class for {
         List <Integer> numeros = new ArrayList<>();
 
         numeros.add(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        int alvo = 2;
+        int alvo = 4;
 
 
         for(int i = 0; i < numeros.size(); i++){
