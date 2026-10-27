@@ -9,6 +9,8 @@ public class Game {
     String[][] tabuleiro = new String[3][3];
 
     private int jogador = 0;
+    private int parada = 1;
+    private int cont = 1;
 
     public Game(){
         for(int i = 0; i < 3; i++){
@@ -23,7 +25,8 @@ public class Game {
             tela();
             verificarJogador();
             jogada();
-        }while (true); 
+            verificarPartida();
+        }while (parada != 0); 
             
         
     }
@@ -70,6 +73,57 @@ public class Game {
             tabuleiro[linha][coluna] = "X";
         }
         return tabuleiro[linha][coluna];
+    }
+
+    public void verificarPartida(){
+        if (cont < 9){
+            for(int i = 0; i < 3; i++){
+                if(tabuleiro[i][0] == tabuleiro[i][1] && tabuleiro[i][0] == tabuleiro[i][2] && tabuleiro[i][0] != " "){
+                    if(jogador == 0){
+                        tela();
+                        System.out.println("O jogador do 'O' venceu");
+                        parada = 0;
+                    }
+                    else{
+                        tela();
+                        System.out.println("O jogador do 'X' venceu");
+                        parada = 0;
+                    }
+                }
+            }
+            for(int i = 0; i < 3; i++){
+                if(tabuleiro[0][i] == tabuleiro[1][i] && tabuleiro[0][i] == tabuleiro[2][i] && tabuleiro[0][i] != " "){
+                    if(jogador == 0){
+                        tela();
+                        System.out.println("O jogador do 'O' venceu");
+                        parada = 0;
+                    }
+                    else{
+                        tela();
+                        System.out.println("O jogador do 'X' venceu");
+                        parada = 0;
+                    }
+                }
+            }
+            if ((tabuleiro[0][0] == tabuleiro[1][1] && tabuleiro[0][0] == tabuleiro[2][2] && tabuleiro[0][0] != " ") ||
+            (tabuleiro[2][0] == tabuleiro[1][1] && tabuleiro[2][0] == tabuleiro[0][2] && tabuleiro[2][0] != " "))
+                if(jogador == 0){
+                        tela();
+                        System.out.println("O jogador do 'O' venceu");
+                        parada = 0;
+                    }
+                    else{
+                        tela();
+                        System.out.println("O jogador do 'X' venceu");
+                        parada = 0;
+                    }
+                }
+        else{
+            tela();
+            System.out.println("Empate!");
+            parada = 0;
+        }
+        cont++;
     }
     
 }
