@@ -1,6 +1,8 @@
 package jogoDaVelha;
-import javax.swing.JFrame;
 import java.util.Scanner;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class Game {
 
@@ -132,7 +134,17 @@ public class Game {
         tela.setSize(400, 400);
         tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         tela.setLocationRelativeTo(null);
+
+        JPanel painel = new JPanel();
+        JButton botao = new JButton();
+
+        painel.setLayout(new GridLayout(3,3,5,5));
+        painel.setBackground(new Color(30, 30, 46));
+
         tela.setVisible(true);
+        tela.add(painel);
+        painel.add(botao);
+        
     }
     
 }
