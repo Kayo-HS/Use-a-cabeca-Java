@@ -1,5 +1,5 @@
 package jogoDaVelha;
-
+import javax.swing.JFrame;
 import java.util.Scanner;
 
 public class Game {
@@ -23,6 +23,7 @@ public class Game {
     public void executar(){
         do{
             tela();
+            janela();
             verificarJogador();
             jogada();
             verificarPartida();
@@ -124,6 +125,14 @@ public class Game {
             parada = 0;
         }
         cont++;
+    }
+    public void janela() {
+        JFrame tela = new JFrame("Jogo da Velha");
+
+        tela.setSize(400, 400);
+        tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        tela.setLocationRelativeTo(null);
+        tela.setVisible(true);
     }
     
 }
